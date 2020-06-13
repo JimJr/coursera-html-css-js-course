@@ -134,12 +134,15 @@ p {
     }
 
     .app-container {
-        margin-top: 0.5em;
+        margin-top: 1em;
     }
 
     .item {
         width: 94%;
-        margin-top: 1em;
+    }
+
+    .item-container {
+        margin-bottom: 1em;
     }
 }
 
