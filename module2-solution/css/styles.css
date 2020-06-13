@@ -1,0 +1,147 @@
+/* Colors as variable */
+.-color-pink {
+    background-color: #d59897;
+}
+
+.-color-red {
+    background-color: #c24543;
+}
+
+.-color-yellow {
+    background-color: #e6d198;
+}
+
+.-color-gray {
+    background-color: #d9d9d9;
+}
+
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.75em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+section {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 33.33%;
+    text-align: center;
+    padding: 0.2em;
+    margin-left: 66.66%;
+}
+
+p {
+    font-size: 0.85em;
+    margin: 0;
+    padding: 0.4em 1em 1em 1em;
+}
+
+/* Component styles */
+
+.-beef-item > section {
+    color: #ffffff;
+}
+
+.app-container {
+    width: 100%;
+}
+
+.item-container {
+    float: left;
+}
+
+.item {
+    border: 2px solid black;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Desktop sized */
+
+@media (min-width: 992px) {
+    section {
+        font-size: 1.25em;
+    }
+
+    .app-container {
+        margin-top: 4em;
+    }
+
+    .-col-ld-4 {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .app-container {
+        margin-top: 2em;
+    }
+
+    .-col-md-6 {
+        width: 50%;
+    }
+
+    .-col-md-12 {
+        width: 100%;
+    }
+
+    .-chicken-item,
+    .-beef-item {
+        width: 92%;
+    }
+
+    .-sushi-item {
+        margin-top: 1.5em;
+        width: 96%;
+    }
+
+    .-chicken-item > section,
+    .-beef-item > section {
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    .-sushi-item > section {
+        width: 25%;
+        margin-left: 75%;
+    }
+
+    section {
+        font-size: 1.15em;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        font-size: 1em;
+    }
+
+    .app-container {
+        margin-top: 0.5em;
+    }
+
+    .item {
+        width: 94%;
+        margin-top: 1em;
+    }
+}
+
+
+
